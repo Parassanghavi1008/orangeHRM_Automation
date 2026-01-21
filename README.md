@@ -1,2 +1,23 @@
-# orangeHRM_Automation
-At OrangeHRM our goal is to help HR do amazing work that they love. HR for All isn’t just a statement at OrangeHRM, it’s a stance that we took when the company was founded in 2006 to help our HR allies make a difference with powerful software tools.    OrangeHRM provides a world-class HRIS experience.
+# OrangeHRM QA Automation Assessment
+
+## Objective
+This project automates the following flows on OrangeHRM demo website:
+- Login
+- Navigate to My Info → Contact Details and update information
+- Change Password
+- Logout
+
+## Tech Stack (To be implemented)
+- Automation Tool: Selenium / Cypress
+- Framework: Page Object Model (POM)
+- Language: Java / JavaScript
+- Test Runner: TestNG / Mocha
+- Build Tool: Maven / npm
+
+## Deliverables
+- Test cases documented in Excel
+- Automation code with POM
+- Execution proof (screenshots or screen recording)
+
+## Website Under Test
+[https://opensource-demo.orangehrmlive.com](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
