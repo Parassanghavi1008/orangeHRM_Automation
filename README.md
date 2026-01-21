@@ -21,3 +21,10 @@ This project automates the following flows on OrangeHRM demo website:
 
 ## Website Under Test
 [https://opensource-demo.orangehrmlive.com](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+
+## Test Case Documentation
+Test cases for this assessment are documented in Google Sheets.
+
+📄 **Test Case Sheet:**  
+https://docs.google.com/spreadsheets/d/XXXXXXX
+
