@@ -2,13 +2,12 @@ package automation.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
 public class ChangePasswordPage {
-
     private WebDriver driver;
     private WebDriverWait wait;
 
@@ -17,21 +16,38 @@ public class ChangePasswordPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // Locators (based on actual HTML)
-    private By userDropdown = By.xpath("//span[@class='oxd-userdropdown-tab']");
-    private By changePasswordLink = By.xpath("//a[text()='Change Password']");
+    // Locators
+    private By changePasswordButton = By.xpath("//button[text()='Change Password']");
+    private By currentPasswordField = By.xpath("//label[text()='Current Password']/following::input[1]");
+    private By newPasswordField = By.xpath("//label[text()='New Password']/following::input[1]");
+    private By confirmPasswordField = By.xpath("//label[text()='Confirm Password']/following::input[1]");
+    private By saveButton = By.xpath("//button[@type='submit']");
 
-    public void clickChangePassword() {
+    // Helpers
+    private void waitAndType(By locator, String value) {
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        element.clear();
+        element.sendKeys(value);
+    }
 
-        // Open user dropdown
-        wait.until(ExpectedConditions.elementToBeClickable(userDropdown)).click();
+    // Actions
+    public void openChangePasswordForm() {
+        wait.until(ExpectedConditions.elementToBeClickable(changePasswordButton)).click();
+    }
 
-        // Click Change Password
-        wait.until(ExpectedConditions.elementToBeClickable(changePasswordLink)).click();
+    public void fillChangePasswordForm(String current, String newPass, String confirm) {
+        waitAndType(currentPasswordField, current);
+        waitAndType(newPasswordField, newPass);
+        waitAndType(confirmPasswordField, confirm);
+    }
 
-        // Validate navigation using URL
-        wait.until(ExpectedConditions.urlContains("updatePassword"));
+    public void clickSave() {
+        wait.until(ExpectedConditions.elementToBeClickable(saveButton)).click();
+    }
 
-        System.out.println("Navigated to Change Password page (URL validated)");
+    public void changePassword(String current, String newPass, String confirm) {
+        openChangePasswordForm();
+        fillChangePasswordForm(current, newPass, confirm);
+        clickSave();
     }
 }
