@@ -37,4 +37,4 @@ Below are the proofs of successful automation execution:
 https://drive.google.com/drive/folders/XXXXXXXXXXXXXXXX
 
 🎥 **Screen Recording (Automation Execution):**  
-https://drive.google.com/file/d/XXXXXXXXXXXXXXXX/view
+[Screen Recording](https://drive.google.com/file/d/1plbn-vqXsZKLcJVX4Yon8K9u5EJAmUFJ/view?usp=sharing)
