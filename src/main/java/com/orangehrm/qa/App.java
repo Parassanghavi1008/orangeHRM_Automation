@@ -1,4 +1,4 @@
-package org.example;
+package com.orangehrm.qa;
 
 /**
  * Hello world!
