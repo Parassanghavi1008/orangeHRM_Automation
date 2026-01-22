@@ -28,3 +28,13 @@ Test cases for this assessment are documented in Google Sheets.
 📄 **Test Case Sheet:**  
 [Google Docs link](https://docs.google.com/spreadsheets/d/1p1mfOjM5RvAfgUFjGiVe9mv2DDh_E-IWmKs5hsSTLnE/edit?usp=sharing)
 
+---
+
+## Execution Proof (Screenshots & Video Recording)
+Below are the proofs of successful automation execution:
+
+📸 **Screenshots:**  
+https://drive.google.com/drive/folders/XXXXXXXXXXXXXXXX
+
+🎥 **Screen Recording (Automation Execution):**  
+https://drive.google.com/file/d/XXXXXXXXXXXXXXXX/view
